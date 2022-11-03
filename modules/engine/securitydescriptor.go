@@ -385,7 +385,7 @@ func (a ACE) String(ao *Objects) string {
 		}
 	}
 
-	result += fmt.Sprintf("MASK %08x", a.Mask)
+	result += fmt.Sprintf(" MASK %08x", a.Mask)
 
 	var rights []string
 	if a.Mask&RIGHT_GENERIC_READ == RIGHT_GENERIC_READ {
